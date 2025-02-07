@@ -5,6 +5,10 @@ STRING_GLOBAL_OPCION = "Por favor, seleccione una opción >> "
 STRING_ERROR = "*ERROR* >> "
 STRING_EXIT = "Saliendo del programa..."
 STRING_ASK_NAME = "Introduce un nombre >> "
+COMPLETE_1 = "▰▱▱▱"
+COMPLETE_2 = "▰▰▱▱"
+COMPLETE_3 = "▰▰▰▱"
+COMPLETE_4 = "▰▰▰▰"
 
 def mensaje_carga_datos():
     print("Comprobando datos...")
