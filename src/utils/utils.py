@@ -12,13 +12,13 @@ def limpiar_consola() -> None:
         os.system("clear")  # Comando para limpiar la consola en Unix/Linux
 
 
-def pedir_numero() -> int:
+def pedir_numero(msj: str) -> int:
     '''
     
     '''
     numero_validado = False
     while not numero_validado:
-        num = input("Introduce un número >> ")
+        num = input(msj)
         if validar_numero(num):
             numero_validado = True
             return int(num)
