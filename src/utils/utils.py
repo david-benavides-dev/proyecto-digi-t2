@@ -1,6 +1,8 @@
 import os
 import time
 
+from src.interfaz.mensajes_menu import *
+
 
 def limpiar_consola() -> None:
     '''
@@ -51,7 +53,7 @@ def pausar_programa(tiempo: int = 5, pausa: bool = False) -> None:
         None   
     '''
     if pausa:
-        input("Pulse una tecla para continuar...")
+        input(STRING_PAUSE)
     if tiempo > 0:
         time.sleep(tiempo)
 
@@ -59,12 +61,12 @@ def pausar_programa(tiempo: int = 5, pausa: bool = False) -> None:
 
 
 
-def colorear_texto(texto: any, color: str) -> str:
+def colorear_texto(msj: str, color: str) -> str:
     '''
-    Función para cambiar el color a un texto dependiendo de un diccionario clave:valor.
+    Función para cambiar el color a una cadena de caracteres dependiendo de un diccionario clave:valor.
 
     Args:
-        texto (any)
+        msj (str): El mensaje a colorear.
     '''
     colores = {
         "rojo": "\033[31m",
@@ -73,4 +75,4 @@ def colorear_texto(texto: any, color: str) -> str:
         }
 
     codigo_color = colores.get(color, colores['fin'])
-    return codigo_color + str(texto) + colores['fin']
+    return codigo_color + str(msj) + colores['fin']

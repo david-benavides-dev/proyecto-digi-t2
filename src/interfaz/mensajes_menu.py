@@ -5,6 +5,7 @@ STRING_GLOBAL_OPCION = "Por favor, seleccione una opción >> "
 STRING_ERROR = "*ERROR* >> "
 STRING_EXIT = "Saliendo del programa..."
 STRING_ASK_NAME = "Introduce un nombre >> "
+STRING_PAUSE = "Presione una tecla para continuar..."
 COMPLETE_1 = "▰▱▱▱"
 COMPLETE_2 = "▰▰▱▱"
 COMPLETE_3 = "▰▰▰▱"
@@ -49,7 +50,6 @@ MENU_2_JEFE_6 = "Introduzca la cantidad de experiencia a ganar con la tarea "
 MENU_2_JEFE_7 = "Generando lista de misiones..."
 MENU_2_JEFE_8 = "¿Estás conforme con las misiones? S/N"
 MENU_2_JEFE_9 = "Misiones generadas satisfactoriamente..."
-MENU_2_JEFE_10 = "Presione una tecla para continuar..."
 
 # EMPLEADO
 
