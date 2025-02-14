@@ -1,4 +1,4 @@
-from src.utils.utils import limpiar_consola
+from src.utils.utils import *
 
 
 def mostrar_menu_principal(logo: str):
@@ -31,7 +31,7 @@ def mostrar_menu_master(nombre: str):
     """)
 
 
-def mostrar_menu_empleados(nombre: str, xp: int, seccion_menu: int = 0):
+def mostrar_menu_empleados(nombre: str, xp: int):
     '''
     Muestra el menu de los empleados.
     '''
@@ -46,3 +46,13 @@ def mostrar_menu_empleados(nombre: str, xp: int, seccion_menu: int = 0):
      ║  4. Salir                             ║
      ╚═══════════════════════════════════════╝
     """)
+
+
+def mensaje_carga_datos():
+    print("Comprobando datos...")
+    pausar_programa(2)
+    print("Datos correctos...")
+    pausar_programa(2)
+    print("Accediendo...")
+    pausar_programa(3)
+    limpiar_consola()

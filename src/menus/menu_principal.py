@@ -1,6 +1,7 @@
 from src.interfaz.consola import *
-from src.interfaz.mensajes_menu import *
-from src.utils.utils import pedir_numero
+from src.interfaz.interface_strings import *
+from src.menus.menu_jefe import *
+from src.utils.utils import *
 
 
 def main_menu():
@@ -9,14 +10,16 @@ def main_menu():
     while not salir:
         mostrar_menu_principal(LOGO)
         opcion = pedir_numero(STRING_GLOBAL_OPCION)
+        pausar_programa(1)
         if opcion == 3:
             print(STRING_EXIT)
             salir = True
         else:
             if opcion == 1:
-                nombre = input(STRING_ASK_NAME)
-                mostrar_menu_master(nombre)
-                input()
+                jefe_menu()
             elif opcion == 2:
                 mostrar_menu_empleados()
-                input()
+                pausar_programa(3)
+            else:
+                print("Opción no válida")
+                pausar_programa(3)

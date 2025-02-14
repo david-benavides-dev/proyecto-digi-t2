@@ -1,9 +1,8 @@
-from src.interfaz.mensajes_menu import *
-from src.menus.menu_principal import main_menu
+from src.interfaz.interface_strings import *
+from src.menus.menu_principal import *
 from src.sistema.gestion_json import *
 from src.utils.utils import *
-from src.interfaz.consola import *
-from src.interfaz.mensajes_menu import *
+from src.interfaz import *
 
 
 def main():

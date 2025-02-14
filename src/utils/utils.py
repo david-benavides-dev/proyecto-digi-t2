@@ -1,7 +1,7 @@
 import os
 import time
 
-from src.interfaz.mensajes_menu import *
+from src.interfaz.interface_strings import *
 
 
 def limpiar_consola() -> None:
@@ -53,7 +53,7 @@ def pausar_programa(tiempo: int = 5, pausa: bool = False) -> None:
         None   
     '''
     if pausa:
-        input(STRING_PAUSE)
+        input(STRING_PAUSA)
     if tiempo > 0:
         time.sleep(tiempo)
 
