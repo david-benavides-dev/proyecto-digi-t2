@@ -2,9 +2,9 @@ from src.utils.utils import *
 
 
 def mostrar_menu_principal(logo: str):
-    '''
+    """
     Muestra el menu principal de la aplicación.
-    '''
+    """
     limpiar_consola()
     print(f"""{logo}
           
@@ -17,24 +17,26 @@ def mostrar_menu_principal(logo: str):
 
 
 def mostrar_menu_master(nombre: str):
+    """
+    Muestra el menú de los jefes.
+    """
     limpiar_consola()
     print(f"""
-     ╔═══════════════════════════════════════╗
-     ║              Hola {nombre}                ║
-     ╠═══════════════════════════════════════╣
-     ║  1. Crear tareas nuevas (fecha de hoy)║
-     ║  2. Modificar tareas existentes       ║
-     ║  3. Gestionar tareas de un empleado   ║
-     ║  4. Agregar nuevo empleado            ║
-     ║  5. Salir                             ║
-     ╚═══════════════════════════════════════╝
+    ╔═══════════════════════════════════════╗
+    ║              Hola {nombre}                ║
+    ╠═══════════════════════════════════════╣
+    ║  1. Crear un grupo de tareas          ║
+    ║  2. Gestionar tareas de un empleado   ║
+    ║  3. Agregar nuevo empleado            ║
+    ║  4. Salir                             ║
+    ╚═══════════════════════════════════════╝
     """)
 
 
 def mostrar_menu_empleados(nombre: str, xp: int):
-    '''
+    """
     Muestra el menu de los empleados.
-    '''
+    """
     limpiar_consola()
     print(f"""
      ╔═══════════════════════════════════════╗
