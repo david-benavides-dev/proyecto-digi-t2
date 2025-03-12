@@ -37,7 +37,7 @@ def mostrar_menu_empleados(nombre: str, xp: int):
     """
     Muestra el menu de los empleados.
     """
-    limpiar_consola()
+    #limpiar_consola()
     print(f"""
      ╔═══════════════════════════════════════╗
      ║          Hola {nombre} - XP: {xp}     ║

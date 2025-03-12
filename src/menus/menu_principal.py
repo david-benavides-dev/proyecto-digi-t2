@@ -1,6 +1,7 @@
 from src.interfaz.consola import *
 from src.interfaz.interface_strings import *
 from src.menus.menu_jefe import *
+from src.sistema.empleados import empleado_menu
 from src.utils.utils import *
 
 
@@ -18,7 +19,7 @@ def main_menu():
             if opcion == 1:
                 jefe_menu()
             elif opcion == 2:
-                mostrar_menu_empleados()
+                empleado_menu()
                 pausar_programa(3)
             else:
                 print("Opción no válida")
