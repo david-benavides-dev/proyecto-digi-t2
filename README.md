@@ -53,3 +53,22 @@ Estos puntos (de ahora en adelante `XP`) podrán utilizarse como 'moneda' intern
     - Se actualizará la ficha JSON del trabajador con la `XP` actualizada.
 
 6. El empleado podrá canjear su `XP` por recompensas tales como: día libre, cena, viaje de fin de semana... mediante una opción de su aplicación.
+
+# Requisitos previos
+
+Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
+
+    Python 3.x: Verifica que tienes Python instalado ejecutando:
+    Visual Studio Code
+
+Si no tienes Python, descárgalo desde python.org.
+
+Visual Studio Code: Si aún no lo tienes, puedes descargar Visual Studio Code desde su web oficial.
+
+Extensión de Python para Visual Studio Code: En Visual Studio Code, instala la extensión de Python para habilitar la ejecución de código y el autocompletado. Puedes buscarla en la sección de extensiones de VSC.
+
+# Pasos para ejecutar el proyecto
+
+1. Clonar el repositorio https://github.com/david-benavides-dev/proyecto-digi-t2.git desde la interfaz de VSC o mediante comandos.
+2. Navega a la carpeta del proyecto
+3. Ejecutar main.py (run python file, botón de "Play" arriba a la derecha)
