@@ -1,40 +1,32 @@
 # Preguntas sobre el análisis de utilidad y aplicación
+## Objetivos estratégicos (6a):
 
-Criterio 6a) Objetivos estratégicos:
+### ¿Qué objetivos estratégicos específicos de la empresa aborda tu software?
+### ¿Cómo se alinea el software con la estrategia general de digitalización?
 
-    ¿Qué objetivos estratégicos específicos de la empresa aborda tu software?
-    ¿Cómo se alinea el software con la estrategia general de digitalización?
+## Áreas de negocio y comunicaciones (6b):
+### ¿Qué áreas de la empresa (producción, negocio, comunicaciones) se ven más beneficiadas con tu software?
+### ¿Qué impacto operativo esperas en las operaciones diarias?
 
-Criterio 6b) Áreas de negocio y comunicaciones:
+## Áreas susceptibles de digitalización (6c):
+### ¿Qué áreas de la empresa son más susceptibles de ser digitalizadas con tu software?
+### ¿Cómo mejorará la digitalización las operaciones en esas áreas?
 
-    ¿Qué áreas de la empresa (producción, negocio, comunicaciones) se ven más beneficiadas con tu software?
-    ¿Qué impacto operativo esperas en las operaciones diarias?
+## Encaje de áreas digitalizadas (AD) (6d):
+### ¿Cómo interactúan las áreas digitalizadas con las no digitalizadas?
+### ¿Qué soluciones o mejoras propondrías para integrar estas áreas?
 
-Criterio 6c) Áreas susceptibles de digitalización:
+## Necesidades presentes y futuras (6e):
+### ¿Qué necesidades actuales de la empresa resuelve tu software?
 
-    ¿Qué áreas de la empresa son más susceptibles de ser digitalizadas con tu software?
-    ¿Cómo mejorará la digitalización las operaciones en esas áreas?
+## Relación con tecnologías (6f):
+### ¿Qué tecnologías habilitadoras has empleado y cómo impactan en las áreas de la empresa?
+### ¿Qué beneficios específicos aporta la implantación de estas tecnologías?
 
-Criterio 6d) Encaje de áreas digitalizadas (AD):
+## Brechas de seguridad (6g):
+### ¿Qué posibles brechas de seguridad podrían surgir al implementar tu software?
+### ¿Qué medidas concretas propondrías para mitigarlas?
 
-    ¿Cómo interactúan las áreas digitalizadas con las no digitalizadas?
-    ¿Qué soluciones o mejoras propondrías para integrar estas áreas?
-
-Criterio 6e) Necesidades presentes y futuras:
-
-    ¿Qué necesidades actuales de la empresa resuelve tu software?
-
-Criterio 6f) Relación con tecnologías:
-
-    ¿Qué tecnologías habilitadoras has empleado y cómo impactan en las áreas de la empresa?
-    ¿Qué beneficios específicos aporta la implantación de estas tecnologías?
-
-Criterio 6g) Brechas de seguridad:
-
-    ¿Qué posibles brechas de seguridad podrían surgir al implementar tu software?
-    ¿Qué medidas concretas propondrías para mitigarlas?
-
-Criterio 6h) Tratamiento de datos y análisis:
-
-    ¿Cómo se gestionan los datos en tu software y qué metodologías utilizas?
-    ¿Qué haces para garantizar la calidad y consistencia de los datos?
+## Tratamiento de datos y análisis (6h):
+###¿Cómo se gestionan los datos en tu software y qué metodologías utilizas?
+### ¿Qué haces para garantizar la calidad y consistencia de los datos?
