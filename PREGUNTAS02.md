@@ -28,5 +28,5 @@
 ### ¿Qué medidas concretas propondrías para mitigarlas?
 
 ## Tratamiento de datos y análisis (6h):
-###¿Cómo se gestionan los datos en tu software y qué metodologías utilizas?
+### ¿Cómo se gestionan los datos en tu software y qué metodologías utilizas?
 ### ¿Qué haces para garantizar la calidad y consistencia de los datos?
