@@ -1,11 +1,28 @@
 import os
 import json
-from src.interfaz.consola import mostrar_menu_empleados
-from src.utils.utils import *
+from interfaz.consola import mostrar_menu_empleados
+from utils.utils import *
 
 data_path = "data/empleados"
 
 def empleado_menu():
+    """
+    Muestra el menú de opciones para el empleado y permite realizar varias acciones relacionadas con las misiones y recompensas.
+
+    El flujo de la función es el siguiente:
+    1. Solicita al empleado su ID de empleado.
+    2. Si el ID no corresponde a un empleado válido, muestra un mensaje de error.
+    3. Si el empleado es válido, se muestra un menú con las siguientes opciones:
+       - Opción 1: Ver las misiones disponibles.
+       - Opción 2: Completar las misiones disponibles.
+       - Opción 3: Canjear XP por recompensas.
+       - Opción 4: Salir de la aplicación.
+    4. Si se selecciona una opción inválida, se muestra un mensaje de error y se vuelve a mostrar el menú.
+
+    Parámetros:
+    -----------
+    No recibe parámetros externos.
+    """
     salir = False
     worker_id = input("Introduce tu ID de empleado: ")
     empleado_dir = os.path.join(data_path, worker_id)
@@ -41,6 +58,22 @@ def empleado_menu():
             print("Opción no válida.")
 
 def ver_misiones(worker_id):
+    """
+    Muestra las misiones disponibles para un empleado, tanto principales como secundarias.
+
+    Para cada grupo de misiones, se muestra la descripción de cada misión y su estado (completada o no),
+    junto con la cantidad de XP que se puede ganar.
+
+    Parámetros:
+    -----------
+    worker_id : str
+        ID del empleado que busca las misiones disponibles.
+
+    Descripción:
+    ------------
+    Recorre los archivos de tareas asociados al empleado, carga las misiones y las muestra en la consola.
+    Si no hay misiones disponibles, se muestra un mensaje indicándolo.
+    """
     empleado_dir = os.path.join(data_path, worker_id)
     archivos_tareas = [f for f in os.listdir(empleado_dir) if f.endswith(".json") and f != "info.json"]
     
@@ -62,6 +95,22 @@ def ver_misiones(worker_id):
         input("Presione una tecla para continuar...")
 
 def completar_misiones(worker_id):
+    """
+    Marca todas las misiones de un grupo como completadas para un empleado.
+
+    Esta función permite al empleado completar todas las misiones (principales y secundarias) de un grupo específico
+    al seleccionar el grupo de misiones por su ID. 
+
+    Parámetros:
+    -----------
+    worker_id : str
+        ID del empleado que desea completar las misiones.
+
+    Descripción:
+    ------------
+    Se selecciona un grupo de misiones, se marcan todas las misiones como completadas y se actualizan los archivos
+    correspondientes con el nuevo estado de las misiones.
+    """
     empleado_dir = os.path.join(data_path, worker_id)
     info_path = os.path.join(empleado_dir, "info.json")
     
@@ -107,6 +156,21 @@ def completar_misiones(worker_id):
     print(f"Has marcado como completado todas las misiones del grupo {grupo_id}.")
 
 def canjear_xp(worker_id):
+    """
+    Permite a un empleado canjear su XP acumulado por recompensas disponibles.
+
+    El empleado puede elegir entre varias recompensas (Día libre, Cena, Viaje) si tiene suficiente XP.
+
+    Parámetros:
+    -----------
+    worker_id : str
+        ID del empleado que desea canjear su XP.
+
+    Descripción:
+    ------------
+    Muestra una lista de recompensas y sus costos en XP. Si el empleado tiene suficiente XP, se realiza el canje,
+    de lo contrario, se muestra un mensaje de error.
+    """
     empleado_dir = os.path.join(data_path, worker_id)
     info_path = os.path.join(empleado_dir, "info.json")
     

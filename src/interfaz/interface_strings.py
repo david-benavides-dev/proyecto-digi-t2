@@ -1,4 +1,4 @@
-from src.utils.utils import *
+from utils.utils import *
 
 # GLOBAL
 STRING_GLOBAL_OPCION = "Por favor, seleccione una opción >> "
@@ -41,9 +41,3 @@ MENU_2_JEFE_6 = "Introduzca la cantidad de experiencia a ganar con la tarea >> "
 MENU_2_JEFE_7 = "Generando lista de misiones..."
 MENU_2_JEFE_8 = "¿Estás conforme con las misiones? S/N >> "
 MENU_2_JEFE_9 = "Misiones generadas satisfactoriamente"
-
-# EMPLEADO
-
-
-# TIENDA
-

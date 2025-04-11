@@ -1,10 +1,21 @@
-from src.sistema.gestion_json import asegurar_directorio
+from sistema.gestion_json import asegurar_directorio
 import json
 import os
 
 data_path = "data/empleados"
 
 def agregar_empleado():
+    """
+    Agrega un nuevo empleado al sistema.
+
+    Esta función solicita al usuario el ID y el nombre del empleado, y crea una carpeta para el empleado en la ruta
+    especificada en `data_path`. Luego, guarda la información del empleado en un archivo JSON dentro de la carpeta
+    del empleado. El empleado es inicializado con 0 puntos de experiencia (XP).
+
+    Ejemplo de uso:
+    ---------------
+    agregar_empleado()
+    """
     worker_id = input("Introduce el ID del nuevo empleado: ")
     nombre = input("Introduce el nombre del empleado: ")
     empleado_dir = os.path.join(data_path, worker_id)
@@ -16,6 +27,18 @@ def agregar_empleado():
 
 
 def crear_grupo_tareas():
+    """
+    Crea un grupo de misiones para un empleado.
+
+    Esta función solicita al usuario el ID de un empleado, verifica si el empleado existe, y luego permite
+    al usuario crear un nuevo grupo de misiones. El grupo de misiones tiene misiones principales y secundarias
+    que el usuario puede definir con una descripción y puntos de experiencia (XP). El grupo de misiones es guardado
+    en un archivo JSON dentro de la carpeta del empleado.
+
+    Ejemplo de uso:
+    ---------------
+    crear_grupo_tareas()
+    """
     worker_id = input("Introduce el ID del empleado: ")
     empleado_dir = os.path.join(data_path, worker_id)
     if not os.path.exists(empleado_dir):
@@ -45,6 +68,17 @@ def crear_grupo_tareas():
 
 
 def gestionar_tareas():
+    """
+    Gestiona las misiones de un empleado.
+
+    Esta función permite al jefe gestionar las misiones de un empleado. Solicita el ID del empleado y, si el empleado
+    existe, presenta los grupos de misiones asignados. Luego, el jefe puede marcar misiones como completadas y
+    asignar puntos de experiencia (XP) al empleado. También puede eliminar misiones completadas del grupo.
+
+    Ejemplo de uso:
+    ---------------
+    gestionar_tareas()
+    """
     worker_id = input("Introduce el ID del empleado: ")
     empleado_dir = os.path.join(data_path, worker_id)
     if not os.path.exists(empleado_dir):
