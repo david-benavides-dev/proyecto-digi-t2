@@ -25,28 +25,17 @@ La idea surge inspirada en los videojuegos de rol, donde los jugadores deben com
 
 [Referencias](#referencias)
 
-## 🎯 Motivación
+## Motivación
 La gestión de tareas en entornos laborales suele resultar poco motivadora. 
 JobQuest! nace de la idea de aplicar mecánicas de gamificación al mundo corporativo, inspirándose en videojuegos de rol para aumentar la implicación y productividad de los empleados.
 
 ## ¿Por qué JobQuest?
 JobQuest! convierte responsabilidades laborales en retos con recompensas tangibles, fomentando la motivación y el compromiso. A diferencia de herramientas tradicionales de productividad, utiliza un enfoque centrado en la experiencia del usuario, reforzando el sentido de logro y progreso.
 
-## Características principales
+Características principales:
 - ✅ **Seguimiento de tareas**: Los empleados pueden marcar las tareas que completan en tiempo real.
 - ✅ **Sistema de puntos**: Los empleados ganan puntos por completar tareas, los cuales pueden canjear por recompensas.
 - ✅ **Evaluación**: El jefe puede revisar el progreso de las tareas y validar la puntuación de los empleados.
-
-## Tecnologías y Posibles Ampliaciones
-- **Python**: Lenguaje principal para el desarrollo de la aplicación.
-
-- **JSON**: Formato de archivo utilizado para almacenar las tareas y puntuaciones.
-
-> 💡 Características que podrían ser implementadas en versiones posteriores:
-
-- **Tkinter**: Biblioteca para la interfaz gráfica de usuario (GUI), para ofrecer una experiencia interactiva más rica.
-
-- **Cloud Storage**: Plataforma en la nube para guardar los archivos, como `Google Drive`, con el fin de hacer la aplicación más accesible y permitir la sincronización de datos en tiempo real.
 
 ## Cómo funciona JobQuest
 
@@ -76,7 +65,7 @@ Estos puntos (de ahora en adelante `XP`) podrán utilizarse como 'moneda' intern
 
 6. El empleado podrá canjear su `XP` por recompensas tales como: día libre, cena, viaje de fin de semana... mediante una opción de su aplicación.
 
-# Primeros Pasos
+## Primeros Pasos
 
 Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 
@@ -94,6 +83,17 @@ Si tienes Python, descárgalo desde python.org.
 4. Navega a la carpeta del proyecto.
 
 5. Ejecutar main.py (run python file, botón de "Play" arriba a la derecha)
+
+## Tecnologías y Posibles Ampliaciones
+- **Python**: Lenguaje principal para el desarrollo de la aplicación.
+
+- **JSON**: Formato de archivo utilizado para almacenar las tareas y puntuaciones.
+
+> 💡 Características que podrían ser implementadas en versiones posteriores:
+
+- **Tkinter**: Biblioteca para la interfaz gráfica de usuario (GUI), para ofrecer una experiencia interactiva más rica.
+
+- **Cloud Storage**: Plataforma en la nube para guardar los archivos, como `Google Drive`, con el fin de hacer la aplicación más accesible y permitir la sincronización de datos en tiempo real.
 
 # Licencia
 JobQuest! se publica bajo la licencia MIT. Eres libre de usar, modificar y distribuir el código, tanto para fines comerciales como no comerciales. Para más información, puedes consultar el archivo LICENSE incluido en el repositorio.
