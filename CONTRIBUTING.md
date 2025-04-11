@@ -114,7 +114,7 @@ Las contribuciones a la documentación son muy bienvenidas. Si detectas errores,
 Puedes contribuir directamente en el README, en archivos Markdown o en los comentarios del código.
 
 ## Guías de estilo
-##Mensajes de commit
+## Mensajes de commit
 - Usa mensajes claros y descriptivos.
 - Estructura sugerida:
   ```bash
