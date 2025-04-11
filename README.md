@@ -17,7 +17,7 @@ La idea surge inspirada en los videojuegos de rol, donde los jugadores deben com
 
 [Primeros Pasos](#primeros-pasos)
 
-[Posibles Ampliaciones](#posiblers-ampliaciones)
+[Tecnologías y Posibles Ampliaciones](#posiblers-ampliaciones)
 
 [Licencia](#licencia)
 
@@ -25,9 +25,19 @@ La idea surge inspirada en los videojuegos de rol, donde los jugadores deben com
 
 [Referencias](#referencias)
 
+## 🎯 Motivación
+La gestión de tareas en entornos laborales suele resultar poco motivadora. 
+JobQuest! nace de la idea de aplicar mecánicas de gamificación al mundo corporativo, inspirándose en videojuegos de rol para aumentar la implicación y productividad de los empleados.
 
-## Tecnologías utilizadas
+## ¿Por qué JobQuest?
+JobQuest! convierte responsabilidades laborales en retos con recompensas tangibles, fomentando la motivación y el compromiso. A diferencia de herramientas tradicionales de productividad, utiliza un enfoque centrado en la experiencia del usuario, reforzando el sentido de logro y progreso.
 
+## Características principales
+- ✅ **Seguimiento de tareas**: Los empleados pueden marcar las tareas que completan en tiempo real.
+- ✅ **Sistema de puntos**: Los empleados ganan puntos por completar tareas, los cuales pueden canjear por recompensas.
+- ✅ **Evaluación**: El jefe puede revisar el progreso de las tareas y validar la puntuación de los empleados.
+
+## Tecnologías y Posibles Ampliaciones
 - **Python**: Lenguaje principal para el desarrollo de la aplicación.
 
 - **JSON**: Formato de archivo utilizado para almacenar las tareas y puntuaciones.
@@ -38,13 +48,7 @@ La idea surge inspirada en los videojuegos de rol, donde los jugadores deben com
 
 - **Cloud Storage**: Plataforma en la nube para guardar los archivos, como `Google Drive`, con el fin de hacer la aplicación más accesible y permitir la sincronización de datos en tiempo real.
 
-## Características principales
-
-- ✅ **Seguimiento de tareas**: Los empleados pueden marcar las tareas que completan en tiempo real.
-- ✅ **Sistema de puntos**: Los empleados ganan puntos por completar tareas, los cuales pueden canjear por recompensas.
-- ✅ **Evaluación**: El jefe puede revisar el progreso de las tareas y validar la puntuación de los empleados.
-
-## Cómo funciona
+## Cómo funciona JobQuest
 
 Los empleados podrán gestionar tareas a través de una interfaz (en este caso, se utilizará una simple consola en la versión inicial).
 
@@ -72,7 +76,7 @@ Estos puntos (de ahora en adelante `XP`) podrán utilizarse como 'moneda' intern
 
 6. El empleado podrá canjear su `XP` por recompensas tales como: día libre, cena, viaje de fin de semana... mediante una opción de su aplicación.
 
-# Requisitos previos
+# Primeros Pasos
 
 Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 
@@ -81,15 +85,15 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
     
 Si tienes Python, descárgalo desde python.org.
 
-3. **Visual Studio Code**: Si aún no lo tienes, puedes descargar Visual Studio Code desde su web oficial.
+1. **Visual Studio Code**: Si aún no lo tienes, puedes descargar Visual Studio Code desde su web oficial.
 
-4. **Extensión de Python para Visual Studio Code**: En Visual Studio Code, instala la extensión de Python para habilitar la ejecución de código y el autocompletado. Puedes buscarla en la sección de extensiones de VSC.
+2. **Extensión de Python para Visual Studio Code**: En Visual Studio Code, instala la extensión de Python para habilitar la ejecución de código y el autocompletado. Puedes buscarla en la sección de extensiones de VSC.
 
-# Pasos para ejecutar el proyecto
+3. Clonar el repositorio https://github.com/david-benavides-dev/proyecto-digi-t2.git desde la interfaz de VSC o mediante comandos.
 
-1. Clonar el repositorio https://github.com/david-benavides-dev/proyecto-digi-t2.git desde la interfaz de VSC o mediante comandos.
-2. Navega a la carpeta del proyecto.
-3. Ejecutar main.py (run python file, botón de "Play" arriba a la derecha)
+4. Navega a la carpeta del proyecto.
+
+5. Ejecutar main.py (run python file, botón de "Play" arriba a la derecha)
 
 # Licencia
 JobQuest! se publica bajo la licencia MIT. Eres libre de usar, modificar y distribuir el código, tanto para fines comerciales como no comerciales. Para más información, puedes consultar el archivo LICENSE incluido en el repositorio.
