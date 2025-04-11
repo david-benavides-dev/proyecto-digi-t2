@@ -67,19 +67,34 @@ Estos puntos (de ahora en adelante `XP`) podrán utilizarse como 'moneda' intern
 
 ## Primeros Pasos
 
-Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
+Para comenzar a utilizar JobQuest! sigue los pasos a continuación:
 
-1. **Python 3.x**
-2. **Visual Studio Code**
+### Prerequisitos
+Asegurate de tener lo siguiente instalado en tu sistema:
+- **Python 3.8** o superior.
+- **git** (para clonar el repositorio)
+- **Visual Studio Code (VSC)** u otro editor de código de tu preferencia.
+- **Extensión de Python para Visual Studio Code**: En Visual Studio Code, instala la extensión de Python para habilitar la ejecución de código y el autocompletado. Puedes buscarla en la sección de extensiones de VSC.
 
+### Clonar el repositorio
+Para poder utilizar el proyecto, necesitar clonar el repositorio.
 
-2. **Extensión de Python para Visual Studio Code**: En Visual Studio Code, instala la extensión de Python para habilitar la ejecución de código y el autocompletado. Puedes buscarla en la sección de extensiones de VSC.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/david-benavides-dev/proyecto-digi-t2.git
+   ```
 
-3. Clonar el repositorio https://github.com/david-benavides-dev/proyecto-digi-t2.git desde la interfaz de VSC o mediante comandos.
-
-4. Navega a la carpeta del proyecto.
-
-5. Ejecutar main.py (run python file, botón de "Play" arriba a la derecha)
+2. Navega a la carpeta del proyecto:
+   ```bash
+   cd proyecto-digi-t2
+   ```
+### Ejecutar el Proyecto
+1. Abre Visual Studio Code (VSC) en la carpeta del proyecto.
+2. Ejecuta el archivo principal main.py.
+   Puedes hacerlo directamente desde VSC usando el botón "Run" (el botón de "Play en la parte superior derecha) o usando el siguiente comando en la terminal:
+   ```bash
+   python main.py
+   ```
 
 ## Tecnologías y Posibles Ampliaciones
 
