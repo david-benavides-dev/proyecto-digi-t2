@@ -108,7 +108,7 @@ Asegurate de tener lo siguiente instalado en tu sistema:
 - **Almacenamiento en la nube**: Plataforma en la nube para guardar los archivos, como `Google Drive`, con el fin de hacer la aplicación más accesible y permitir la sincronización de datos en tiempo real.
 
 ## Contribuir
-¡Las contribuciones a JobQuest! son bienvenidas! Ya sea para mejorar el código, enriquecer la documentación o sugerir nuevas características, tu feedback es valorado. Tienes más información en el archivo CONTRIBUTING para guiarte sobre cómo empezar y hacer que tu contribución cuente.
+¡Las contribuciones a JobQuest! son bienvenidas! Ya sea para mejorar el código, enriquecer la documentación o sugerir nuevas características, tu feedback es valorado. Tienes más información en el archivo [CONTRIBUTING](https://github.com/david-benavides-dev/proyecto-digi-t2/blob/main/CONTRIBUTING.md) para guiarte sobre cómo empezar y hacer que tu contribución cuente.
 
 ## Licencia
 JobQuest! se publica bajo la licencia MIT. Eres libre de usar, modificar y distribuir el código, tanto para fines comerciales como no comerciales. Para más información, puedes consultar el archivo LICENSE incluido en el repositorio.
