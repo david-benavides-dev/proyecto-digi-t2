@@ -102,5 +102,8 @@ Para poder utilizar el proyecto, necesitar clonar el repositorio.
 
 - **Cloud Storage**: Plataforma en la nube para guardar los archivos, como `Google Drive`, con el fin de hacer la aplicación más accesible y permitir la sincronización de datos en tiempo real.
 
-# Licencia
+## Contribuir
+¡Las contribuciones a JobQuest! son bienvenidas! Ya sea para mejorar el código, enriquecer la documentación o sugerir nuevas características, tu feedback es valorado. Tienes más información en el archivo CONTRIBUTING para guiarte sobre cómo empezar y hacer que tu contribución cuente.
+
+## Licencia
 JobQuest! se publica bajo la licencia MIT. Eres libre de usar, modificar y distribuir el código, tanto para fines comerciales como no comerciales. Para más información, puedes consultar el archivo LICENSE incluido en el repositorio.
