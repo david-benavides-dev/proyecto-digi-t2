@@ -1,12 +1,30 @@
 <p align="center"><img alt="jobQuest" src="./assets/readme-header.png"/></p>
 
-# jobQuest! - Gestión de Objetivos y Tareas para Empresas
-**JobQuest!** pretende ser una herramienta intuitiva diseñada para ayudar a las empresas en la gestión de tareas y objetivos de sus empleados. Utiliza un sistema de puntuación y recompensas basado en el rendimiento, con el objetivo de incentivar la productividad individual de los trabajadores.
+**JobQuest!** es una herramienta intuitiva diseñada para ayudar a las empresas en la gestión de tareas y objetivos de sus empleados. Utiliza un sistema de puntuación y recompensas basado en el rendimiento, con el objetivo de incentivar la productividad individual de los trabajadores.
 
 La idea surge inspirada en los videojuegos de rol, donde los jugadores deben completar misiones para subir de nivel y obtener recompensas como recursos o equipamiento. **JobQuest!** busca aplicar ese mismo concepto al entorno laboral, convirtiendo los objetivos diarios en "misiones principales" y "misiones secundarias".
 
 > 📝 Nota: Algunas de las funcionalidades descritas en este README pueden no llegar a ser implementadas en la versión final del 
 > software debido a limitaciones de tiempo o conocimientos del alumno.
+
+## Tabla de Contenidos
+
+[Motivación](#motivacion)
+
+[¿Por qué JobQuest?](#porque-jobquest)
+
+[Como Funciona JobQuest ⚙️](#como-funciona-jobquest)
+
+[Primeros Pasos](#primeros-pasos)
+
+[Posibles Ampliaciones](#posiblers-ampliaciones)
+
+[Licencia](#licencia)
+
+[Contribuir](#contribuir)
+
+[Referencias](#referencias)
+
 
 ## Tecnologías utilizadas
 
