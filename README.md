@@ -89,6 +89,7 @@ Asegurate de tener lo siguiente instalado en tu sistema:
    ```bash
    cd proyecto-digi-t2
    ```
+
 ### Ejecutar el Proyecto
 1. Abre Visual Studio Code (VSC) en la carpeta del proyecto.
 2. Ejecuta el archivo principal main.py.
