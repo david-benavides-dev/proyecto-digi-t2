@@ -92,8 +92,4 @@ Si tienes Python, descárgalo desde python.org.
 3. Ejecutar main.py (run python file, botón de "Play" arriba a la derecha)
 
 # Licencia
-JobQuest! se publica bajo la licencia MIT.
-
-Esto significa que eres libre de usar, modificar y distribuir el código, tanto para fines comerciales como no comerciales, siempre que se incluya una copia del aviso de copyright original y la licencia en cualquier copia del software o parte sustancial del mismo.
-
-Para más información, puedes consultar el archivo LICENSE incluido en el repositorio.
+JobQuest! se publica bajo la licencia MIT. Eres libre de usar, modificar y distribuir el código, tanto para fines comerciales como no comerciales. Para más información, puedes consultar el archivo LICENSE incluido en el repositorio.
