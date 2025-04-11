@@ -7,6 +7,12 @@ La idea surge inspirada en los videojuegos de rol, donde los jugadores deben com
 > 📝 Nota: Algunas de las funcionalidades descritas en este README pueden no llegar a ser implementadas en la versión final del 
 > software debido a limitaciones de tiempo o conocimientos del alumno.
 
+<p align="center">
+    <a href="https://david-benavides-dev.github.io/proyecto-digi-t2/docs/">Documentación</a>
+    ·
+    <a href="https://github.com/david-benavides-dev/proyecto-digi-t2/wiki">Wiki</a>
+  </p>
+
 ## Tabla de Contenidos
 
 [Motivación](#motivacion)
