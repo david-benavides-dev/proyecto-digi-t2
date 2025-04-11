@@ -71,10 +71,7 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 
 1. **Python 3.x**
 2. **Visual Studio Code**
-    
-Si tienes Python, descárgalo desde python.org.
 
-1. **Visual Studio Code**: Si aún no lo tienes, puedes descargar Visual Studio Code desde su web oficial.
 
 2. **Extensión de Python para Visual Studio Code**: En Visual Studio Code, instala la extensión de Python para habilitar la ejecución de código y el autocompletado. Puedes buscarla en la sección de extensiones de VSC.
 
@@ -85,11 +82,6 @@ Si tienes Python, descárgalo desde python.org.
 5. Ejecutar main.py (run python file, botón de "Play" arriba a la derecha)
 
 ## Tecnologías y Posibles Ampliaciones
-- **Python**: Lenguaje principal para el desarrollo de la aplicación.
-
-- **JSON**: Formato de archivo utilizado para almacenar las tareas y puntuaciones.
-
-> 💡 Características que podrían ser implementadas en versiones posteriores:
 
 - **Tkinter**: Biblioteca para la interfaz gráfica de usuario (GUI), para ofrecer una experiencia interactiva más rica.
 
