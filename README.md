@@ -26,20 +26,23 @@ La idea surge inspirada en los videojuegos de rol, donde los jugadores deben com
 [Referencias](#referencias)
 
 ## Motivación
-La gestión de tareas en entornos laborales suele resultar poco motivadora. 
-JobQuest! nace de la idea de aplicar mecánicas de gamificación al mundo corporativo, inspirándose en videojuegos de rol para aumentar la implicación y productividad de los empleados.
+La gestión de tareas en entornos laborales suele resultar poco motivadora. Muchas veces, los empleados no tienen una forma clara de medir su progreso o de recibir reconocimiento por sus logros. JobQuest! nace con el objetivo de cambiar esto, aplicando mecánicas de gamificación inspiradas en los videojuegos de rol para aumentar la implicación y productividad de los empleados.
+
+Este enfoque gamificado tiene como fin transformar las tareas cotidianas en misiones que los empleados deben completar para ganar puntos y obtener recompensas. Al hacerlo, JobQuest! busca fomentar una cultura de rendimiento, autonomía y compromiso.
 
 ## ¿Por qué JobQuest?
-JobQuest! convierte responsabilidades laborales en retos con recompensas tangibles, fomentando la motivación y el compromiso. A diferencia de herramientas tradicionales de productividad, utiliza un enfoque centrado en la experiencia del usuario, reforzando el sentido de logro y progreso.
+**JobQuest!** no es solo una herramienta de gestión de tareas, es una plataforma que convierte las responsabilidades laborales en retos. Utilizando un sistema de puntos y recompensas, el empleado tiene incentivos por alcanzar sus metas. Este enfoque va más allá de las herramientas tradicionales de productividad, ya que integra una experiencia gamificada que hace que los trabajadores se sientan más motivados y satisfechos con su rendimiento, aumentando su productividad.
 
-Características principales:
+Algunas de las ventajas de JobQuest! incluyen:
 - ✅ **Seguimiento de tareas**: Los empleados pueden marcar las tareas que completan en tiempo real.
+- ✅ **Claridad de metas**: Cada tarea está claramente definida y categorizada como misión principal o secundaria.
+- ✅ **Aumento de la motivación**: Los empleados son incentivados a completar tareas con la promesa de recompensas.
 - ✅ **Sistema de puntos**: Los empleados ganan puntos por completar tareas, los cuales pueden canjear por recompensas.
 - ✅ **Evaluación**: El jefe puede revisar el progreso de las tareas y validar la puntuación de los empleados.
 
 ## Cómo funciona JobQuest
 
-Los empleados podrán gestionar tareas a través de una interfaz (en este caso, se utilizará una simple consola en la versión inicial).
+En JobQuest!, los empleados gestionan sus tareas a través de una interfaz simple (actualmente en consola). El proceso básico funciona de la siguiente manera:
 
 Estas tareas estarán creadas y gestionadas por un `master` o empresa, que determinará los objetivos que quiere que el determinado usuario realice.
 
@@ -67,18 +70,16 @@ Estos puntos (de ahora en adelante `XP`) podrán utilizarse como 'moneda' intern
 
 ## Primeros Pasos
 
-Para comenzar a utilizar JobQuest! sigue los pasos a continuación:
+Antes de comenzar, asegúrate de tener lo siguiente instalado en tu sistema:
 
 ### Prerequisitos
 Asegurate de tener lo siguiente instalado en tu sistema:
 - **Python 3.8** o superior.
 - **git** (para clonar el repositorio)
-- **Visual Studio Code (VSC)** u otro editor de código de tu preferencia.
+- **Visual Studio Code (VSC)** u otro editor de código.
 - **Extensión de Python para Visual Studio Code**: En Visual Studio Code, instala la extensión de Python para habilitar la ejecución de código y el autocompletado. Puedes buscarla en la sección de extensiones de VSC.
 
 ### Clonar el repositorio
-Para poder utilizar el proyecto, necesitar clonar el repositorio.
-
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/david-benavides-dev/proyecto-digi-t2.git
@@ -97,10 +98,14 @@ Para poder utilizar el proyecto, necesitar clonar el repositorio.
    ```
 
 ## Tecnologías y Posibles Ampliaciones
+### Tecnologías Utilizadas
+- Python: Lenguaje principal para el desarrollo de la aplicación.
+- JSON: Para almacenar las tareas y la puntuación de los empleados.
 
-- **Tkinter**: Biblioteca para la interfaz gráfica de usuario (GUI), para ofrecer una experiencia interactiva más rica.
+### Posibles Ampliaciones
+- **Tkinter**: Biblioteca para la interfaz gráfica de usuario (GUI), para ofrecer una experiencia interactiva más interactiva y visual.
 
-- **Cloud Storage**: Plataforma en la nube para guardar los archivos, como `Google Drive`, con el fin de hacer la aplicación más accesible y permitir la sincronización de datos en tiempo real.
+- **Almacenamiento en la nube**: Plataforma en la nube para guardar los archivos, como `Google Drive`, con el fin de hacer la aplicación más accesible y permitir la sincronización de datos en tiempo real.
 
 ## Contribuir
 ¡Las contribuciones a JobQuest! son bienvenidas! Ya sea para mejorar el código, enriquecer la documentación o sugerir nuevas características, tu feedback es valorado. Tienes más información en el archivo CONTRIBUTING para guiarte sobre cómo empezar y hacer que tu contribución cuente.
