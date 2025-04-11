@@ -23,6 +23,8 @@ La idea surge inspirada en los videojuegos de rol, donde los jugadores deben com
 
 [Primeros Pasos](#primeros-pasos)
 
+[Ejemplo de uso](#ejemplo-de-uso)
+
 [Tecnologías y Posibles Ampliaciones](#posiblers-ampliaciones)
 
 [Licencia](#licencia)
@@ -98,11 +100,208 @@ Asegurate de tener lo siguiente instalado en tu sistema:
 
 ### Ejecutar el Proyecto
 1. Abre Visual Studio Code (VSC) en la carpeta del proyecto.
-2. Ejecuta el archivo principal main.py.
-   Puedes hacerlo directamente desde VSC usando el botón "Run" (el botón de "Play en la parte superior derecha) o usando el siguiente comando en la terminal:
+2. Asegúrate de tener configurado correctamente el PYTHONPATH para que Python pueda resolver correctamente los módulos internos del proyecto.
+   Usando los siguientes comandos en la terminal dentro de VSC (CTRL+ALT+ñ):
+   Para usuarios de Windows (PowerShell):
    ```bash
+   $env:PYTHONPATH="DIRECTORIO_REPO\proyecto-digi-t2\src"
    python main.py
    ```
+    Para usuarios de Linux / macOs:
+   ```bash
+   export PYTHONPATH="/ruta/a/tu/repositorio/proyecto-digi-t2/src"
+   python main.py
+   ```
+> Reemplaza la ruta con la ubicación real donde tienes clonado el repositorio.
+
+## Ejemplo de Uso
+- Menú principal
+    ```python
+    
+          _       _      ___                  _   _
+         (_) ___ | |__  / _ \ _   _  ___  ___| |_| |
+         | |/ _ \| '_ \| | | | | | |/ _ \/ __| __| |
+         | | (_) | |_) | |_| | |_| |  __/\__ \ |_|_|
+       ,/  |\___/|_.__/ \__\_\__,_|\___||___/\__/(_)
+       |__/
+    
+         ╔═══════════════════════════════════════╗
+         ║  1. Login para jefes                  ║
+         ║  2. Login para empleados              ║
+         ║  3. Salir                             ║
+         ╚═══════════════════════════════════════╝
+    
+    Por favor, seleccione una opción >>
+    ```
+    Dependiendo de la opción que seleccionemos, nos mostrará un login u otro.
+- Menú de jefe/master
+    ```python
+    
+        ╔═══════════════════════════════════════╗
+        ║              Hola David               ║
+        ╠═══════════════════════════════════════╣
+        ║  1. Crear un grupo de tareas          ║
+        ║  2. Gestionar tareas de un empleado   ║
+        ║  3. Agregar nuevo empleado            ║
+        ║  4. Salir                             ║
+        ╚═══════════════════════════════════════╝
+    
+    Por favor, seleccione una opción >>
+    ```
+    Si seleccionamos la opción 1, pedirá un ID de usuario, en este caso no existen empleados, así que crearemos uno:
+    ```python
+    
+        ╔═══════════════════════════════════════╗
+        ║              Hola David               ║
+        ╠═══════════════════════════════════════╣
+        ║  1. Crear un grupo de tareas          ║
+        ║  2. Gestionar tareas de un empleado   ║
+        ║  3. Agregar nuevo empleado            ║
+        ║  4. Salir                             ║
+        ╚═══════════════════════════════════════╝
+    
+    Por favor, seleccione una opción >> 3
+    Perfecto! Empecemos a construir... (introduzca x en cualquier momento para salir)
+    Introduce el ID del nuevo empleado: 1
+    Introduce el nombre del empleado: Prueba
+    Empleado Prueba agregado correctamente.
+    ```
+    Se creará un archivo JSON en la ruta data/empleados/ID_DEL_EMPLEADO que contendrá los datos del usuario: ID, nombre y experiencia actual del mismo
+    Un ejemplo del archivo JSON de empleado creado en el caso anterior:
+    ```json
+    {
+        "worker_id": "1",
+        "nombre": "Prueba",
+        "xp": 0
+    }
+    ```
+    Ahora podemos crear tareas para dicho empleado utilizando su ID. Esta opción nos pedirá el ID del empleado, el ID del grupo de tareas, la cantidad de tareas que queremos añadir tanto principales como opcionales, así como el nombre de las mismas y la experiencia
+    que recibirá el empleado al completarlas. Esta opción también generará un archivo JSON:
+  ```python
+    ╔═══════════════════════════════════════╗
+    ║              Hola David               ║
+    ╠═══════════════════════════════════════╣
+    ║  1. Crear un grupo de tareas          ║
+    ║  2. Gestionar tareas de un empleado   ║
+    ║  3. Agregar nuevo empleado            ║
+    ║  4. Salir                             ║
+    ╚═══════════════════════════════════════╝
+  
+    Por favor, seleccione una opción >> 1
+    Perfecto! Empecemos a construir... (introduzca x en cualquier momento para salir)
+    Introduce el ID del empleado: 1
+    Introduce un ID para el grupo de misiones: 1
+    ¿Cuántas misiones principales desea agregar?: 1
+    ¿Cuántas misiones secundarias desea agregar?: 1
+    Descripción de la misión principal 1: Trabajar
+    XP para la tarea principal 1: 10
+    Descripción de la misión secundaria 1: Tarea Opcional Prueba
+    XP para la misión secundaria 1: 10
+    Grupo de misiones creado correctamente.
+  ```
+  El archivo JSON generado se guardará en la carpeta con ID del usuario y el nombre será el de grupo de tareas. Este JSON almacenará el nombre de las tareas, el grupo de pertenecer a principal/secundaria, la experiencia que proprciona al usuario y un tag si la tarea se ha     marcado como completada o no por el empleado (que el jefe debe verificar posteriormente)
+  Un ejemplo del archivo JSON de las tareas creado en el caso anterior:
+  ```json
+  {
+    "principales": {
+        "TID1": {
+            "descripcion": "Trabajar",
+            "xp": 10,
+            "completado": false
+        }
+    },
+    "secundarias": {
+        "TID2": {
+            "descripcion": "Tarea Opcional Prueba",
+            "xp": 10,
+            "completado": false
+        }
+    }
+  }
+  ```
+  También tenemos la opción de gestionar las tareas de un empleado mediante el ID del mismo. De esta forma, validamos una tarea, añadimos XP al usuario y borramos la misma si así lo deseamos:
+  ```python
+  Introduce el ID del empleado: 1
+  MISIONES DE Prueba - ID 1
+  -*****************************-
+   1
+  Introduce la ID del grupo de misiones: 1
+  Misiones principales:
+  TID1: Trabajar - [X] - 10XP
+  Misiones secundarias:
+  TID2: Tarea Opcional Prueba - [X] - 10XP
+  Introduce la ID de la misión a validar: 1
+  Prueba ha conseguido 10 puntos de experiencia. Actualmente tiene 10.
+  ¿Desea borrar la misión completada? (S/N): S
+  ```
+- Menú empleado
+  ```python
+  Introduce tu ID de empleado: 1
+
+     ╔═══════════════════════════════════════╗
+     ║          Hola Prueba - XP: 10         ║
+     ╠═══════════════════════════════════════╣
+     ║  1. Comprobar tareas                  ║
+     ║  2. Marcar tareas                     ║
+     ║  3. Visitar la tienda de puntos       ║
+     ║  4. Salir                             ║
+     ╚═══════════════════════════════════════╝
+
+    Selecciona una opción:
+  ```
+  Podemos comprobar tareas disponibles, verificar tareas completadas o intercambiar XP por beneficios a cargo de la empresa (NOT YET IMPLEMENTED)
+  ```python
+     ╔═══════════════════════════════════════╗
+     ║          Hola Prueba - XP: 10         ║
+     ╠═══════════════════════════════════════╣
+     ║  1. Comprobar tareas                  ║
+     ║  2. Marcar tareas                     ║
+     ║  3. Visitar la tienda de puntos       ║
+     ║  4. Salir                             ║
+     ╚═══════════════════════════════════════╝
+
+    Selecciona una opción: 1
+    Grupo de misiones: 1
+    Misiones principales:
+    Misiones secundarias:
+      TID2: Tarea Opcional Prueba - [X] - 10XP
+    Presione una tecla para continuar...
+  ```
+  Si queremos marcar misiones como completadas, basta con introducir el grupo de misiones que queremos dar como terminadas y el programa se encargará de editar el archivo JSON transformando el boolean a true:
+  ```python
+     ╔═══════════════════════════════════════╗
+     ║          Hola Prueba - XP: 10         ║
+     ╠═══════════════════════════════════════╣
+     ║  1. Comprobar tareas                  ║
+     ║  2. Marcar tareas                     ║
+     ║  3. Visitar la tienda de puntos       ║
+     ║  4. Salir                             ║
+     ╚═══════════════════════════════════════╝
+
+    Selecciona una opción: 2
+    Grupos de misiones disponibles:
+      1
+    Introduce el ID del grupo de misiones que deseas completar: 1
+    Has marcado como completado todas las misiones del grupo 1.
+  ```
+  Dependiendo de la experiencia, podemos cambiar los puntos por recompensas, generando un archivo con una ID automática y haciendo un insert a un sistema interno de la empresa con un ID único (NOT YET IMPLEMENTED)
+  ```python
+     ╔═══════════════════════════════════════╗
+     ║          Hola Prueba - XP: 10         ║
+     ╠═══════════════════════════════════════╣
+     ║  1. Comprobar tareas                  ║
+     ║  2. Marcar tareas                     ║
+     ║  3. Visitar la tienda de puntos       ║
+     ║  4. Salir                             ║
+     ╚═══════════════════════════════════════╝
+
+    Selecciona una opción: 3
+    Recompensas disponibles:
+      Día libre: 100 XP
+      Cena: 200 XP
+      Viaje: 500 XP
+    ¿Qué deseas canjear? (o escribe 'salir' para volver):
+  ```
 
 ## Tecnologías y Posibles Ampliaciones
 ### Tecnologías Utilizadas
