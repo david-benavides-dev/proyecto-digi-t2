@@ -97,7 +97,7 @@ Antes de sugerir una funcionalidad nueva:
 
 - Haz *fork* del repositorio:
   ```bash
-  git clone https://github.com/<TU_USUARIO>/proyecto-digi-t2.git
+  git clone https://github.com/david-benavides-dev/proyecto-digi-t2.git
   cd proyecto-digi-t2
 - Crea una nueva rama para tu contribución:
   ```bash
