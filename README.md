@@ -15,9 +15,9 @@ La idea surge inspirada en los videojuegos de rol, donde los jugadores deben com
 
 ## Tabla de Contenidos
 
-[Motivación](#motivacion)
+[Motivación](#motivación)
 
-[¿Por qué JobQuest?](#¿por-qué-jobquest?)
+[¿Por qué JobQuest?](#por-qué-jobquest)
 
 [Como Funciona JobQuest](#como-funciona-jobquest)
 
